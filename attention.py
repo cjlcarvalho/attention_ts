@@ -33,10 +33,6 @@ class LayerNormalization(Layer):
 
         return self.gamma * (x - mean) / (std + self.eps) + self.beta
 
-    def compute_output_shape(self, input_shape):
-
-        return input_shape
-
 
 class ScaledDotProductAttention:
 
